@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<script>
+    'use strict';
+
+    //Задача №6
+
+    'use strict';
+    let arg1 = +prompt('Введите первый аргумент', '');
+    let arg2 = +prompt('Введите второй аргумент', '');
+    let operation = +prompt('Введите название операции', '');
+
+    function mathOperation(arg1, arg2, operation) {
+        switch (operation) {
+
+            case 'сложение':
+                return 'Сумма ' + (arg1 + arg2);
+
+            case 'разница':
+                return 'Разница ' + (arg1 - arg2);
+
+            case 'умножение':
+                return 'Результат умножения ' + (arg1 * arg2);
+
+            case 'деление':
+                return 'Результат деления ' + (arg1 / arg2);
+        }
+    }
+
+    alert(mathOperation(arg1, arg2, 'сложение'));
+    alert(mathOperation(arg1, arg2, 'разница'));
+    alert(mathOperation(arg1, arg2, 'умножение'));
+    alert(mathOperation(arg1, arg2, 'деление'));
+</script>
+
+</body>
+</html>
+
+

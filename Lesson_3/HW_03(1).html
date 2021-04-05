@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<script>
+
+    'use strict';
+    //определяем диапазон
+    // Задание №1
+
+    'use strict';
+    let i = 0;
+    while (i < 100) {          //определяем диапазон
+        if (primeNumber(i)) {
+            console.log(i);
+        }
+        i++;
+    }
+    function primeNumber(number) {    //определяем простые числа через условие
+        if (number < 2) {
+            return false;
+        }
+        for (let i = 2; i <= Math.sqrt(number); i++) {
+            if (number % i === 0) {
+                return false;
+            }
+        }
+        return true;
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<script>
+
+    'use strict';
+    //Задача №3
+    'use strict';
+
+    const basket = [
+        [
+            'monitor', //product_name
+            13000,    //price
+            3      // quantity
+        ],
+        [
+            'motherboard', //product_name
+            8500,         //price
+            2            // quantity
+        ],
+        [
+            'cooler', //product_name
+            3500,    //price
+            4        // quantity
+        ],
+        [
+            'processor', //product_name
+            14000,     //price
+            4        // quantity
+        ],
+    ];
+    function getTotalPrice() {
+        let countBasketPrice = 0;
+        for (let i = 0; i < basket.length; i++) {
+            countBasketPrice += basket[i][1] * basket[i][2]
+        }
+        return countBasketPrice;
+    }
+    console.log(getTotalPrice());
+
+
+</script>
+</body>
+</html>

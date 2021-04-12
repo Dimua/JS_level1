@@ -32,7 +32,6 @@
         hundreds: 0,
         tens: 0,
         units: 0,
-        num: +prompt('Введите любое число от 0 до 999'),
 
         defineNumber() {
             if (object.num > 0 && object.num < 999) {
@@ -46,7 +45,9 @@
             }
         }
     }
+    object.num = +prompt('Введите любое число от 0 до 999');
     object.defineNumber();
+
 </script>
 </body>
 </html>

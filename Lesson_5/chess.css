@@ -1,0 +1,30 @@
+h4 {
+    color: #000;
+    font-size: 20px;
+    text-align: center;
+  }
+
+.container {
+    width: 560px;
+    height: 560px;
+    margin:0 auto;
+    border: 3px solid black;
+}
+
+.block {
+    width: 70px;
+    height: 70px;
+    float: left;
+}
+td {
+    width: 70px;
+    height: 70px;
+    text-align: center;
+}
+.grey {
+    background-color: rgba(0, 0, 0, 0.53);
+}
+
+.white {
+    background-color: #fff;
+}
